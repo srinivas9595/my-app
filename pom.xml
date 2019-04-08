@@ -35,6 +35,18 @@
                 <target>1.7</target>
             </configuration>
         </plugin>
+	    <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://3.18.67.126:8081/repository/Artifacts_Sample_Project/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://3.18.67.126:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 	<plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
